@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <style>
+        /* Genel Sayfa Stil Ayarları */
+        body {
+            font-family: 'Arial', sans-serif; /* Genel yazı tipi */
+            background-color: #f4f4f4; /* Açık gri arka plan rengi */
+            color: #333; /* Genel yazı rengi */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Navigasyon Menüsü Stil Ayarları */
+        nav {
+            background-color: #2c3e50; /* Koyu mavi arka plan */
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none; /* Liste işaretlerini kaldır */
+        }
+
+        nav ul li {
+            display: inline-block; /* Menü elemanlarını yatay diz */
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #ecf0f1; /* Açık renkli yazı */
+            text-decoration: none; /* Alt çizgiyi kaldır */
+            font-weight: bold; /* Kalın yazı tipi */
+            padding: 8px 15px;
+            border-radius: 5px; /* Köşeleri yuvarla */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Yumuşak geçiş */
+        }
+
+        nav ul li a:hover {
+            background-color: #e74c3c; /* Üzerine gelindiğinde kırmızı arka plan */
+            color: #ffffff; /* Üzerine gelindiğinde beyaz yazı rengi */
+        }
+
+        /* Başlıklar için Stil Ayarları */
+        h2, h3 {
+            color: #2980b9; /* Mavi başlık rengi */
+            margin: 20px;
+            font-size: 2em;
+            border-bottom: 2px solid #e74c3c; /* Kırmızı alt çizgi */
+            padding-bottom: 10px;
+        }
+
+        /* Paragraflar için Stil Ayarları */
+        p {
+            margin: 20px;
+            padding: 15px;
+            background-color: #ffffff; /* Beyaz arka plan */
+            border-left: 5px solid #2980b9; /* Sol kenarda mavi şerit */
+            font-size: 1.2em;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+            border-radius: 5px; /* Köşeleri yuvarla */
+        }
+
+        /* Liste için Stil Ayarları */
+        ul {
+            margin: 20px 40px;
+            padding-left: 20px;
+            list-style-type: square; /* Kare işaretli liste */
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #34495e; /* Koyu mavi liste maddeleri */
+        }
+
+        /* Form ve Elemanların Stilleri */
+        form {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-width: 500px;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #2980b9; /* Mavi etiket rengi */
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #2980b9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1a6f9e;
+        }
+    </style>
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="servisler.html">Servisler</a></li>
+            <li><a href="hakkinda.html">Hakkında</a></li>
+        </ul>
+    </nav>
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, doloremque! Autem qui labore a impedit corporis, culpa, quos voluptas eos laudantium illo accusamus error excepturi, minus amet deleniti modi. Cumque!</p>
+    
+    <h3>İletişim</h3>
+    <ul>
+        <li>Adres: Ankara</li>
+        <li>Telefon: 05320000000</li>
+        <li>E-posta: onurturkarslan@gmail.com</li>
+    </ul>
+
+    <h3>İletişim Formu</h3>
+    <form action="#">
+        <label for="name">Adınız:</label>
+        <input type="text" id="name" name="name" placeholder="Adınızı girin" required>
+
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin" required>
+
+        <label for="message">Mesajınız:</label>
+        <textarea id="message" name="message" placeholder="Mesajınızı buraya yazın" required></textarea>
+
+        <input type="submit" value="Gönder">
+    </form>
+    
+</body>
+</html>
